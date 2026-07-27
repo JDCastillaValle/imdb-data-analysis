@@ -70,9 +70,9 @@ Genres = df1[['tconst','genres']].copy()
 
 df.drop('genres',axis=1,inplace=True)
 
-df.to_csv(r'C:/Users/José Daniel/Documents/IMDB/Data_clean/movies.csv', index=False)
-Genres.to_csv(r'C:/Users/José Daniel/Documents/IMDB/Data_clean/genres.csv', index=False)
+df.to_csv(r'path/movies.csv', index=False)
+Genres.to_csv(r'path/genres.csv', index=False)
 
 titles_ID = df['tconst']
 
-titles_ID.to_csv(r'C:/Users/José Daniel/Documents/IMDB/Data_clean/titles_ID.csv', index=False)
+titles_ID.to_csv(r'path/titles_ID.csv', index=False)
