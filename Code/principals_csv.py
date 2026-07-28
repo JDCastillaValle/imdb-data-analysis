@@ -15,3 +15,6 @@ movies_index = list(movies_index)
 principals = principals_df.loc[movies_index].copy()
 
 principals.to_csv(r'path/principals.csv')
+names_ID = pd.Series(principals['nconst'].unique())
+
+names_ID.to_csv(r'path/names_ID.csv', index=False)
